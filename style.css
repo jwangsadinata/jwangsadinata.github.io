@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+  background-color: white;
+  font-family: Helvetica Neue, Helvetica;
+  color: black;
+}
+
+body a {
+  font-weight: bold;
+  color: #141414;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: #959595;
+}
+
+body .content {
+  background: url("jasonweb.png") no-repeat top right;
+  height: 1000px;
+  width: 1500px;
+  margin: 10px 0 0 auto;
+  padding-left: 50px;
+}
+
+body .content p {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 28px 0 10px 10px;
+  padding: 0px; }
+
+footer {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
