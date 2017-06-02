@@ -25,25 +25,62 @@ body a:hover {
   color: #5082a5;
 }
 
-body .container {
-  background: url("jasonweb.png") no-repeat top right;
-  height: 1000px;
-  width: 1500px;
-  margin: 10px 0 0 auto;
-  padding-left: 50px;
+#title {
   -webkit-animation: fadeIn 1.75s;
   -o-animation: fadeIn 1.75s;
   animation: fadeIn 1.75s;
 }
 
-body .container p {
-  font-size: 22px;
-  font-weight: 300;
-  margin: 28px 0 10px 10px;
-  padding: 0px; }
+body .container {
+  margin: 10px 0 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  -webkit-animation: fadeIn 1.75s;
+  -o-animation: fadeIn 1.75s;
+  animation: fadeIn 1.75s;
+}
 
-footer {
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 20px;
+@media (min-width: 900px) {
+  body .container {
+    background: url("jasonweb.png") no-repeat top right;
+    height: 1000px;
+    width: 1500px;
+  }
+
+  body .container p {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 28px 0 10px 10px;
+    padding: 0px; }
+
+  footer {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  img {
+    max-height: 100%;
+    max-width: 100%
+  }
+
+  #title {
+    display: block;
+    margin: 0 auto;
+  }
+
+  body .container p {
+    font-size: 3vw;
+    font-weight: 300;
+    margin: 4% 0 3% 3%;
+    padding: 0px; }
+
+  footer {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2%;
+  }
 }
