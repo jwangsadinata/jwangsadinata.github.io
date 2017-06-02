@@ -71,10 +71,14 @@ body .container {
     margin: 0 auto;
   }
 
+  body .content {
+    margin-top: 8%;
+  }
+
   body .container p {
     font-size: 3vw;
     font-weight: 300;
-    margin: 4% 0 3% 3%;
+    margin: 6% 0 3% 3%;
     padding: 0px; }
 
   footer {
