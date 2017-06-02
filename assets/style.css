@@ -63,7 +63,7 @@ body .container {
 @media handheld, screen and (max-width: 900px) {
   img {
     max-height: 100%;
-    max-width: 70%
+    max-width: 70%;
   }
 
   #title {
