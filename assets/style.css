@@ -1,3 +1,13 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   margin: 0px;
   background-color: white;
@@ -15,15 +25,18 @@ body a:hover {
   color: #5082a5;
 }
 
-body .content {
+body .container {
   background: url("jasonweb.png") no-repeat top right;
   height: 1000px;
   width: 1500px;
   margin: 10px 0 0 auto;
   padding-left: 50px;
+  -webkit-animation: fadeIn 1.75s;
+  -o-animation: fadeIn 1.75s;
+  animation: fadeIn 1.75s;
 }
 
-body .content p {
+body .container p {
   font-size: 22px;
   font-weight: 300;
   margin: 28px 0 10px 10px;
