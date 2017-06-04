@@ -1,13 +1,32 @@
+/* jwangsadinata.com */
+
+/* Animations */
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
   }
 
-  to {
+  100% {
     opacity: 1;
   }
 }
 
+@keyframes grayScale {
+  0% {
+    -webkit-filter: grayscale(100%);
+    -mos-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  100% {
+    -webkit-filter: grayscale(0%);
+    -mos-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
+
+/* Main CSS */
 body {
   margin: 0px;
   background-color: white;
@@ -26,18 +45,21 @@ body a:hover {
 }
 
 #title {
-  -webkit-animation: fadeIn 1.75s;
-  -o-animation: fadeIn 1.75s;
-  animation: fadeIn 1.75s;
+  -webkit-animation: fadeIn 1.75s ease-in 0.25s;
+  -o-animation: fadeIn 1.75s ease-in 0.25s;
+  animation: fadeIn 1.75s ease-in 0.25s;
+}
+
+p {
+  -webkit-animation: fadeIn 1.75s ease-in 0.25s;
+  -o-animation: fadeIn 1.75s ease-in 0.25s;
+  animation: fadeIn 1.75s ease-in 0.25s;
 }
 
 body .container {
   margin: 10px 0 0 auto;
   padding-left: 50px;
   padding-right: 50px;
-  -webkit-animation: fadeIn 1.75s;
-  -o-animation: fadeIn 1.75s;
-  animation: fadeIn 1.75s;
 }
 
 @media (min-width: 900px) {
@@ -45,6 +67,11 @@ body .container {
     background: url("jasonweb.png") no-repeat top right;
     height: 1000px;
     width: 1500px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-animation: grayScale 8s linear 2s 3 alternate forwards;
+    -o-animation: grayScale 8s linear 2s 3 alternate forwards;
+    animation: grayScale 8s linear 2s 3 alternate forwards;
   }
 
   body .container p {
@@ -60,6 +87,7 @@ body .container {
   }
 }
 
+/* Mobile - no background img */
 @media handheld, screen and (max-width: 900px) {
   img {
     max-height: 100%;
