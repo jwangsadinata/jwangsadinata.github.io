@@ -41,25 +41,32 @@ body a {
 }
 
 body a:hover {
-  color: #5082a5;
+  color: #BEA042;
 }
 
 #title {
-  -webkit-animation: fadeIn 1.75s ease-in 0.25s;
-  -o-animation: fadeIn 1.75s ease-in 0.25s;
-  animation: fadeIn 1.75s ease-in 0.25s;
+  -webkit-animation: fadeIn 1s ease-in 0.25s;
+  -o-animation: fadeIn 1s ease-in 0.25s;
+  animation: fadeIn 1s ease-in 0.25s;
 }
 
-p {
-  -webkit-animation: fadeIn 1.75s ease-in 0.25s;
-  -o-animation: fadeIn 1.75s ease-in 0.25s;
-  animation: fadeIn 1.75s ease-in 0.25s;
+#title:hover {
+  -ms-transform: scale(1.03,1.03);
+  -webkit-transform: scale(1.03,1.03);
+  transform: scale(1.03,1.03);
 }
 
 body .container {
   margin: 10px 0 0 auto;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+body .container p:hover,
+body .container p:focus {
+  -ms-transform: translateX(25px);
+  -webkit-transform: translateX(25px);
+  transform: translateX(25px);
 }
 
 @media (min-width: 900px) {
@@ -69,9 +76,9 @@ body .container {
     width: 1500px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    -webkit-animation: grayScale 8s linear 2s 3 alternate forwards;
-    -o-animation: grayScale 8s linear 2s 3 alternate forwards;
-    animation: grayScale 8s linear 2s 3 alternate forwards;
+    -webkit-animation: grayScale 4s ease-in-out 4s 3 alternate forwards;
+    -o-animation: grayScale 4s ease-in-out 4s 3 alternate forwards;
+    animation: grayScale 4s ease-in-out 4s 3 alternate forwards;
   }
 
   body .container p {
