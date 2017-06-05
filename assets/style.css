@@ -40,6 +40,10 @@ body a {
   text-decoration: none;
 }
 
+strong {
+  font-weight: bold;
+}
+
 body a:hover,
 strong:hover {
   color: #BEA042;
