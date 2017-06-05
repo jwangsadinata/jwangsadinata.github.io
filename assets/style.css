@@ -40,7 +40,8 @@ body a {
   text-decoration: none;
 }
 
-body a:hover {
+body a:hover,
+strong:hover {
   color: #BEA042;
 }
 
