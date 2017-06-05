@@ -26,13 +26,17 @@
         <p>I can be reached through <a href = "mailto:jwangsadinata@gmail.com?Subject=Hi%20there">email</a> or <a href = "http://www.linkedin.com/in/jwangsadinata" target="_blank">LinkedIn</a>.</p>
         <p>If that's not enough, I have a <a href = "https://d165rdaw2kwutl.cloudfront.net/jwangsadinata.pdf" target="_blank">résumé</a> to tell you more about myself.</p>
       </div>
-      <audio id="audio-jazz-piano" src="assets/bodyandsoul.ogg"></audio>
+      <audio id="audio-jazz-piano" src="bodyandsoul.ogg"></audio>
     </div>
   <script type="text/javascript">
-    document.getElementById("jazz-piano").onmouseover = function() { document.getElementById("audio-jazz-piano").play(); };
+    var text = document.getElementById("jazz-piano");
+    var audio = document.getElementById("audio-jazz-piano");
+    text.onmouseover = function() { audio.play(); };
+    text.onclick = function() { window.location.href = "https://d165rdaw2kwutl.cloudfront.net/bodyandsoul.ogg"; };
   </script>
   </body>
   <footer>
     <small>Copyright &copy; Jason Wangsadinata, 2017</small>
   </footer>
 </html>
+
